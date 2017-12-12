@@ -2,59 +2,86 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>Bootstrap</title>
 </head>
-<body>
-  <img src="http://fakeimg.pl/150/" alt="fakeimage">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <button type="button">Oui</button>
-  <button type="button">Non</button>
-  <h1>Lorem Ipsum</h1>
-  <p>Aenean eget lorem ac mi tristique volutpat. 
-  Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
-  <a href="#">Super</a>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
+<!-- j'ai commencer par dir la direction avec row -->
+<body class="row col">
+  <!-- pui j'ai indiquer combien de collone prendron les article par rapport a la taille de l'ecrant avec col-4 ect -->
+  <!-- puis j'ai donnes la hauteur des margin pour lespacement entre les article et image -->
+  <!-- j'ai utiliser bg pour changer la couleur du font et text pour la couleur du texte -->
+    <div class="col-xl-4 col-lg-4 col-12 bg-dark text-white">
+      <!-- pour cette image j'ai utiliser rounded-cicle pour la rendre en forme de cercle et j'ai utiliser rounded mx-auto d-block pour pour la metre au centre et je les utiliser pour toute les image -->
+      <img class="m-5 rounded mx-auto d-block rounded-circle " src="http://fakeimg.pl/150/" alt="fakeimage">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+        rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+        lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+        orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+        Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+      </p>
+<!-- j'ai utiliser d-flex justify-content-center pour les metre au centre du block pui je les travailler avec les margin -->
+      <div class="d-flex justify-content-center">
+        <!-- j'ai utiliser btn btn-danger et success pour changer les couleur et les forme des boutons -->
+        <button class=" mr-5 mb-5 btn btn-danger" type="button">Oui</button>
+        <button class=" ml-5 mb-5  btn btn-success" type="button">Non</button>
+      </div>
+    </div>
+  <div class="col">
+    <div class="col-xl-8 col-lg-8 col-12 ">
+      <h1>Lorem Ipsum</h1>
+      <p>Aenean eget lorem ac mi tristique volutpat.
+        Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+        <a class="bg-primary text-white p-2" href="#">Super</a>
+    </div>
+    <div class="row col-12">
+      <div class="col-xl-4 col-lg-8 col-12 m-5">
+        <img class="mb-5 rounded mx-auto d-block" src="http://fakeimg.pl/300/" alt="fakeimg">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+            rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+            lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+            orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+            Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+          </p>
+      </div>
+      <div class="col-xl-4 col-lg-8 col-12  m-5">
+        <img class="mb-5 rounded mx-auto d-block"  src="http://fakeimg.pl/300/" alt="fakeimg">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+            rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+            lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+            orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+            Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+          </p>
+      </div>
+      <div class="col-xl-4 col-lg-8 col-12 m-5">
+        <img class="mb-5 rounded mx-auto d-block"  src="http://fakeimg.pl/300/" alt="fakeimg">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+            rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+            lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+            orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+            Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+          </p>
+      </div>
+      <div class="col-xl-4 col-lg-8 col-12 m-5">
+        <img class="mb-5 rounded mx-auto d-block"  src="http://fakeimg.pl/300/" alt="fakeimg">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+            rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+            lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+            orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+            Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+          </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
